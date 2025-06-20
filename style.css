@@ -2,9 +2,8 @@ body {
     background-color: gray;
 }
 
-section {
-    background-color: #ffffff;
-    border-radius: 12px;
+header {
+    display: flex;
 }
 
 img {
@@ -34,8 +33,89 @@ h1 {
 }
 
 .profile-section {
+    background-color: #ffffff;
+    border-radius: 12px;
     padding: 24px;
     box-shadow: 0 0 3px #DADADA;
+   
+}
+/*Proficiency section styling*/
+.proficiency {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 2px #DADADA;
+}
+
+.proficiency-levels {
+    font-weight: bold;
+    display: flex;
+    gap: 12px;
+}
+
+.proficiency-levels p{
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    text-align: left;
+}
+
+.skill-bar {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.bar-container {
+    width: 100%;
+}
+
+.proficiency-bar {
+    height: 16px; /*6px?*/
+    border-radius: 3px;
+    background-color: #396B5E;
+}
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 70%;
+}
+
+.javascript {
+    width: 45%;
+}
+
+.tailwindcss {
+    width: 40%;
+}
+
+/*Skills section styling*/
+
+.tags {
+    background-color: #c2d1cb; /* LIGHT GREEN PILL SHAPE (#ECF4F1)*/
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.skills {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 2px #DADADA;
+}
+
+.Proficiency-skills {
+    display: flex;
+    justify-content: space-around;
 }
 
 /*Media queries for mobile*/
@@ -52,5 +132,11 @@ h1 {
 
     .bio-text {
         font-size: 14px;
+    }
+
+    .Proficiency-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
