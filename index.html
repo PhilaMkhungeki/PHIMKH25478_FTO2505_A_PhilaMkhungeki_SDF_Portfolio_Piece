@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yznF6KwO8wG9M5M0DHNqDap0xTiQlUUGq5AATlFScSe6A+lPbf3xZdxZTVX0CeVK2z0u7TDyJ1L+uKlgZTlIrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Resume Project</title>
 </head>
 <body>
     <!--name and surname-->
     <header>
-        <img src="images/profile.jpg" alt="Profile image">
+        <section>
+            <img src="images/profile.jpg" alt="Profile image">
+        </section>
         <section class="profile-section">
             <h1>Phila Mkhungeki</h1>
             <p class="bio-text">Aspiring software developer with a keen interest in leveraging technology to address real-world business problems. Proficient in 
@@ -21,7 +24,7 @@
     </header>
     <!--Proficiency and skills-->
     <section class="Proficiency-skills">
-        <section class="proficiency">
+        <section class="proficiency-section">
             <h2>Proficiency</h2>
             <div class="proficiency-levels">
                 <p>Beginner</p>
@@ -31,7 +34,7 @@
             <div class="skill-bar">
                 <p class="skill">HTML</p>
                 <div class="bar-container">
-                    <div class="proficiency-bar html">90%</div>
+                    <div class="proficiency-bar html">80%</div>
                 </div>  
             </div>
             <div class="skill-bar">
@@ -54,7 +57,7 @@
             </div> 
         </section>
         
-        <section class="skills">
+        <section class="skills-section">
             <h2>Skills</h2>
             <div class="skill-tags">
                 <div class="tags">Software Development</div>
@@ -70,126 +73,222 @@
         </section>
     </section>
     <!--Projects-->
-    <section class="projets">
+    <section class="projects-section">
         <h2>Projects</h2>
-        <div>
-            <h3>2025</h3>
-            <h3>CS Cat HTML Portfolio</h3>
-            <p><span>Brief:</span>A well structured HTML page that follows best practices for semantic HTML.</p>
-            <p><span>Technologies:</span>HTML, CSS</p>
-            <p><span>Responsibilities:</span>Linked navigation elements properly, use images correctly and successfully push to github.</p>
-        </div>
-        <div>
-            <h3>2025</h3>
-            <h3>CS Pets Instagram Profile</h3>
-            <p><span>Brief:</span>Recreated an Instagram style profile page to refine styling and layout skills.</p>
-            <p><span>Technologies:</span>HTML, CSS</p>
-            <p><span>Responsibilities:</span>To style and structure the CodeSpace Pets Instagram Profile, using flexbox and grid layouts.</p>
-        </div>
-        <div>
-            <h3>2025</h3>
-            <h3>Responsive Footer</h3>
-            <p><span>Brief:</span>Built a fully responsive HTML & CSS footer to refine CSS layout and styling skills.</p>
-            <p><span>Technologies:</span>HTML, CSS</p>
-            <p><span>Responsibilities:</span>Build and style a fully responsive footer. Ensuring the project uses semantic and accessible HTML and that the footer adapts to different screen sizes.</p>
-        </div>
-        <div>
-            <h3>2025</h3>
-            <h3>Portfolio Website</h3>
-            <p><span>Brief:</span>Developed a personal portfolio website to showcase projects and skills.</p>
-            <p><span>Technologies:</span>Javascript, HTML, CSS</p>
-            <p><span>Responsibilities:</span>Designed and implemented the website, ensured responsiveness and accessibility.</p>
-        </div>
+        <section class="projects">
+            <div class="project-card first">
+                <h3>2025</h3>
+                <button class="heart-icon" aria-label="favorite">
+                    <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                </button>
+                <h3 class="project-name">CS Cat HTML Portfolio</h3>
+                <p><span>Brief:</span>A well structured HTML page that follows best practices for semantic HTML.</p>
+                <p><span>Technologies:</span>HTML, CSS</p>
+                <p><span>Responsibilities:</span>Linked navigation elements properly, use images correctly and successfully push to github.</p>
+            </div>
+            <div class="project-card">
+                <h3>2025</h3>
+                <button class="heart-icon" aria-label="favorite">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+                <h3 class="project-name">CS Pets Instagram Profile</h3>
+                <p><span>Brief:</span>Recreated an Instagram style profile page to refine styling and layout skills.</p>
+                <p><span>Technologies:</span>HTML, CSS</p>
+                <p><span>Responsibilities:</span>To style and structure the CodeSpace Pets Instagram Profile, using flexbox and grid layouts.</p>
+            </div>
+            <div class="project-card">
+                <h3>2025</h3>
+                <button class="heart-icon" aria-label="favorite">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+                <h3 class="project-name">Responsive Footer</h3>
+                <p><span>Brief:</span>Built a fully responsive HTML & CSS footer to refine CSS layout and styling skills.</p>
+                <p><span>Technologies:</span>HTML, CSS</p>
+                <p><span>Responsibilities:</span>Build and style a fully responsive footer. Ensuring the project uses semantic and accessible HTML and that the footer adapts to different screen sizes.</p>
+            </div>
+            <div class="project-card">
+                <h3>2025</h3>
+                <button class="heart-icon" aria-label="favorite">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </button>
+                <h3 class="project-name">Portfolio Website</h3>
+                <p><span>Brief:</span>Developed a personal portfolio website to showcase projects and skills.</p>
+                <p><span>Technologies:</span>Javascript, HTML, CSS</p>
+                <p><span>Responsibilities:</span>Designed and implemented the website, ensured responsiveness and accessibility.</p>
+            </div>
+        </section>
     </section>
     <!--Education and Tools-->
     <section class="education-tools">
-        <div class="education">
+        <section class="education-section">
             <h2>Education</h2>
-            <div>
-                <p>May.2025 - In-Progress</p>
-                <p>CodeSpace Academy</p>
-                <p>Software Development</p>
-                <p>Full-time</p>
-                <ul>
-                    <li>Gained a strong foundation in software development fundamentals.</li>
-                    <li>Grasped basics to build well-structered, accessible, and visually appealing websites to more complex topics of layout designes</li>
-                    <li>Graudually built my knowledge with hand-on learning to create website</li>
-                </ul>
+            <div class="education-card current">
+                <div>
+                    <p>May.2025 - In-Progress</p>
+                    <p class="school-name">CodeSpace Academy</p>
+                    <p>Software Development</p>
+                    <p>Full-time</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>Gained a strong foundation in software development fundamentals.</li>
+                        <li>Grasped basics to build well-structered, accessible, and visually appealing websites to more complex topics of layout designes</li>
+                        <li>Graudually built my knowledge with hand-on learning to create website</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <p>March.2021 - Jun.2023</p>
-                <p>UJ</p>
-                <p>Computer Science and Informatics</p>
-                <p>Full-time</p>
-                <ul>
-                    <li>Gained a strong foundation in C++, Java, Visual basics and Object-Oriented Programming.</li>
-                    <li>studied database management system, using SQL to store and process information in relational databases.</li>
-                    <li>Collaborated with teams to build user friendly e-commerce websites that included the front and the backend development of the website</li>
-                </ul>
+            <div class="education-card">
+                <div>
+                    <p class="information">March.2021 - Jun.2023</p>
+                    <p class="school-name">UJ</p>
+                    <p class="information">Computer Science and Informatics</p>
+                    <p class="information">Full-time</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>Gained a strong foundation in C++, Java, Visual basics and Object-Oriented Programming.</li>
+                        <li>studied database management system, using SQL to store and process information in relational databases.</li>
+                        <li>Collaborated with teams to build user friendly e-commerce websites that included the front and the backend development of the website</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <p>Jan.2016 - Dec.2020</p>
-                <p>Little Flower High School</p>
-                <p>Matric NQF Level 4</p>
-                <ul>
-                    <li>I did Maths, English, IsiXhosa, Life Orientation, Life Sciences, Geography and Physical Sciences</li>
-                    <li>Developed problem solving skills, creativity and analytical thinking</li>
-                </ul>
+            <div class="education-card">
+                <div>
+                    <p class="information">Jan.2016 - Dec.2020</p>
+                    <p class="school-name">Little Flower High School</p>
+                    <p class="information">Matric | NQF Level 4</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>I did Maths, English, IsiXhosa, Life Orientation, Life Sciences, Geography and Physical Sciences</li>
+                        <li>Developed problem solving skills, creativity and analytical thinking</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="tools">
+        </section>
+
+        <section class="tools-section">
             <h2>Tools</h2>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+            <div class="tools-group">
+                <div class="tools-container">
+                    <p>languages</p>
+                    <div class="tools-icons">
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/html5/original.svg" alt="html"></img>
+                        </div>
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/css3/original.svg" alt="css"></img>
+                        </div>
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/javascript/original.svg" alt="JavaScript"></img>
+                        </div>
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/tailwindcss/original-wordmark.svg" alt="tailwindcss"></img>
+                        </div>
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/csharp/original.svg" alt="csharp"></img>
+                        </div>
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/cplusplus/original.svg" alt="c++"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-container">
+                    <p>design</p>
+                    <div class="tools-icons">
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/figma/original.svg" alt="figma"></img>
+                        </div>
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/chrome/original.svg" alt="chrome"></img>
+                        </div>
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/codepen/plain.svg" alt="codepen"></img>
+                        </div>
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/canva/original.svg" alt="canva"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-container">
+                    <p>tools</p>
+                    <div class="tools-icons">
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/vscode/original.svg" alt="vscode"></img>
+                        </div>
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/github/original.svg" alt="github"></img>
+                        </div>
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/git/original.svg" alt="git"></img>
+                        </div>
+                        <div>
+                            <img src="https://devicon-website.vercel.app/api/visualstudio/plain.svg" alt="visualstudio"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
     </section>
     <!--Experience-->
-    <section class="experience">
+    <section class="experience-section">
         <h2>Experience</h2>
         <!--Fake experience-->
-        <div>
-            <p>March.2021 - Jun.2023</p>
-            <p>UJ</p>
-            <p>Computer Science and Informatics</p>
-            <p>Full-time</p>
-            <ul>
-                <li>Gained a strong foundation in C++, Java, Visual basics and Object-Oriented Programming.</li>
-                <li>studied database management system, using SQL to store and process information in relational databases.</li>
-                <li>Collaborated with teams to build user friendly e-commerce websites that included the front and the backend development of the website</li>
-            </ul>
+        <div class="experience-card recent">
+            <div>
+                <p>Aug.2024 - July.2025</p>
+                <p class="job-title">Bookdtore Clerk</p>
+                <p>Readers'Haven | Full-time</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Organised and shelved new arrivals, ensuring a clean and enticing store layout</li>
+                    <li>Assisted customers with personalized book recommendations, boosting sales</li>
+                    <li>Handled point-of-sale transactions and updated inventory records</li>
+                </ul>
+            </div>
+            <p class="badge">Most Recent</p>
         </div>
-        <div>
-            <p>March.2021 - Jun.2023</p>
-            <p>UJ</p>
-            <p>Computer Science and Informatics</p>
-            <p>Full-time</p>
-            <ul>
-                <li>Gained a strong foundation in C++, Java, Visual basics and Object-Oriented Programming.</li>
-                <li>studied database management system, using SQL to store and process information in relational databases.</li>
-                <li>Collaborated with teams to build user friendly e-commerce websites that included the front and the backend development of the website</li>
-            </ul>
+        <div class="experience-card">
+            <div>
+                <p class="other-information">Jan.2023 - Jul.2024</p>
+                <p class="job-title">Sales | Cell Contracts</p>
+                <p class="other-information">Tech Solutions | Full-time</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Advised customers on the best mobile plans and devices, driving consistent contract sign-ups</li>
+                    <li>Handled escalated customer inquiries, maintaining high satisfaction ratings</li>
+                    <li>Partned with team members to meet monthly sales targets and achieve store goals</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <p>March.2021 - Jun.2023</p>
-            <p>UJ</p>
-            <p>Computer Science and Informatics</p>
-            <p>Full-time</p>
-            <ul>
-                <li>Gained a strong foundation in C++, Java, Visual basics and Object-Oriented Programming.</li>
-                <li>studied database management system, using SQL to store and process information in relational databases.</li>
-                <li>Collaborated with teams to build user friendly e-commerce websites that included the front and the backend development of the website</li>
-            </ul>
+        <div class="experience-card">
+            <div>
+                <p class="other-information">Feb.2021 - Dec.2022</p>
+                <p class="job-title">Waiter</p>
+                <p class="other-information">The Bistro House | Part-time</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Delievered attentive table service, promply addresing guests' needs and requests</li>
+                    <li>Promoted menu specials and upsold items to enhance the dinig experience</li>
+                    <li>Collaborated with kitchen staff to ensure seamless service and timely meal delivery</li>
+                </ul>
+            </div>
         </div>
     </section>
     <!--Footer-->
     <footer>
-        <h3>Let's chat I'm ready to work on exciting projects</h3>
+        <h3>Thank you for getting to the end! Please do reach out.</h3>
         <a href="mailto:qlpmkhungeko899gmail.com">qlpmkhungeko899gmail.com</a>
+        <span>|</span>
         <a href="tel:+27 784372870">0784372870</a>
+        <span>|</span>
         <a href="#">LinkedIN link</a>
-        <a href="#">GitHub Link</a>
+        <span>|</span>
+        <a href="https://github.com/PhilaMkhungeki">GitHub Link</a>
     </footer>
 </body>
 </html>
