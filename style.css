@@ -396,8 +396,13 @@ footer a {
 /*Media queries for mobile*/
 @media (max-width: 640px) {
     img {
-        width: 96px;
-        height: 96px;
+        display: none;
+    }
+
+    .profile-section {
+        width: 100%;
+        padding-left: 20px;
+     
     }
 
     h1 {
@@ -424,13 +429,14 @@ footer a {
 
     .projects {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem; 
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 100%; 
     }
 
     .project-card {
         padding: 16px;
-        width: 80%;
+        width: 90%;
     }
 
     .education-card {
